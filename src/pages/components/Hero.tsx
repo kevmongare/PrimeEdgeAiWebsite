@@ -1,9 +1,14 @@
+/**
+ * This is the Hero page holds the landing page hero section dat
+ * @returns Hero Data
+ * @requires data from src/pages/components/data
+ */
 import React from "react";
-import LandingText from "./data/LandingPage";
+import {HeroStats, LandingText} from "./data/LandingPage";
 
 const Hero: React.FC = () => {
     return (
-        <div className="relative h-[80vh] mt-20 flex items-center overflow-hidden">
+        <div className="relative h-[95vh] mt-20 flex items-center overflow-hidden">
             
             {/* 1. Fixed Background Video */}
             <video 
@@ -30,7 +35,7 @@ const Hero: React.FC = () => {
                 </h1>
 
                 {LandingText.map((item, index) => (
-                    <p className="text-gray-300 max-w-2xl text-center mx-auto mt-4" key={index}>
+                    <p className="text-gray-400 max-w-2xl text-center mx-auto mt-4 font-extralight" key={index}>
                         {item.LandingText}
                     </p>
                 ))}
@@ -40,7 +45,18 @@ const Hero: React.FC = () => {
                     <button className="px-4 py-2 rounded-lg backdrop-blur-xl text-white shadow shadow-gray-400/30 bg-white/10">Explore Our Options</button>
                 </div>
 
-                <hr className='border-gray-600 py-8 max-w-[80%] mx-auto'/>
+                <hr className='border-gray-600 py-8 max-w-full mx-auto'/>
+
+                 {/* --- New Statistics Section --- */}
+                <div className="py-8 grid grid-cols-3 gap-4 text-center text-white max-w-[80%] mx-auto">
+                    {HeroStats.map((stat) => (
+                        <div key={stat.id}>
+                            <p className="text-4xl font-bold">{stat.value}</p>
+                            <p className="text-gray-400">{stat.label}</p>
+                        </div>
+                    ))}
+                </div>
+
             </div>
         </div>
     );
