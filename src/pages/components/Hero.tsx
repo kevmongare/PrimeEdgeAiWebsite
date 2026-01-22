@@ -8,7 +8,7 @@ import {HeroStats, LandingText} from "./data/LandingPage";
 
 const Hero: React.FC = () => {
     return (
-        <div className="relative h-[95vh] mt-20 flex items-center overflow-hidden">
+        <div className="relative h-[110vh] mt-20 flex items-center overflow-hidden">
             
             {/* 1. Fixed Background Video */}
             <video 
@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
             <div className="fixed inset-0 bg-black/85 -z-10" />
 
             {/* 3. Hero Content (Scrolled content) */}
-            <div className="relative z-10 mx-auto max-w-5xl items-center fade-in">
-                <p className="shadow-gray-400/30 bg-white/10 w-fit px-5 text-white my-8 py-2 rounded-lg shadow text-center mx-auto">
+            <div className="relative z-10 mx-auto max-w-5xl items-center fade-in h-screen">
+                <p className="shadow-gray-400/30 bg-white/30 w-fit px-5 text-white my-8 py-2 rounded-full shadow text-center mx-auto">
                     <span className="text-blue-500">✧</span> AI-Powered Business Solutions
                 </p>
                 
@@ -45,10 +45,10 @@ const Hero: React.FC = () => {
                     <button className="px-4 py-2 rounded-lg backdrop-blur-xl text-white shadow shadow-gray-400/30 bg-white/10">Explore Our Options</button>
                 </div>
 
-                <hr className='border-gray-600 py-8 max-w-full mx-auto'/>
+                <hr className='border-gray-600 mt-15 max-w-full mx-auto'/>
 
                  {/* --- New Statistics Section --- */}
-                <div className="py-8 grid grid-cols-3 gap-4 text-center text-white max-w-[80%] mx-auto">
+                <div className="py-10 grid grid-cols-3 gap-4 text-center text-white max-w-[80%] mx-auto">
                     {HeroStats.map((stat) => (
                         <div key={stat.id}>
                             <p className="text-4xl font-bold">{stat.value}</p>
