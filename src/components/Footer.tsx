@@ -10,8 +10,7 @@ import Logo from '../../public/primeedge-logo-P-uVyoGj.png'
 const Footer = () => {
     return (
         <>
-            <div>
-                <hr className='text-gray-600 py-2 max-w-6xl mx-auto'/>
+            <div className='bg-gray-950 py-4 border-t border-gray-500'>
                 <section className="flex justify-between py-10 max-w-6xl mx-auto">
                     <div>
                         <img src={Logo} alt="" className='h-30' />

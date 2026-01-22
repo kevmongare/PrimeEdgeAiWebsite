@@ -8,7 +8,7 @@ import Logo from '../../public/primeedge-logo-P-uVyoGj.png'
 const Navbar = () => {
     return (
         <>
-            <section className="shadow-sm shadow-gray-500 fixed top-0 left-0 right-0 backdrop-blur-2xl">
+            <section className="shadow-sm shadow-gray-500 fixed top-0 left-0 right-0 backdrop-blur-2xl z-50 bg-black/98">
 
                 <div className="flex items-center justify-between px-4">
                     <a href=""><img src={Logo} alt="" className="h-20"/></a>

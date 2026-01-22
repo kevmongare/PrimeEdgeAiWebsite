@@ -3,6 +3,7 @@
  * This is the main entry point to the app holds all components
  * interlinked
  * - Also loads its main styling from the App.css
+ * @returns all components used in this website
  */
 import './App.css'
 import Navbar from './components/NavBar'
