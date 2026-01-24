@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             </video>
 
             {/* 2. Fixed Black/50 Overlay */}
-            <div className="fixed inset-0 bg-black/85 -z-10" />
+            <div className="fixed inset-0 bg-black/92 -z-10" />
 
             {/* 3. Hero Content (Scrolled content) */}
             <div className="relative z-10 mx-auto max-w-5xl items-center fade-in h-screen">
@@ -45,10 +45,10 @@ const Hero: React.FC = () => {
                     <button className="px-4 py-2 rounded-lg backdrop-blur-xl text-white shadow shadow-gray-400/30 bg-white/10">Explore Our Options</button>
                 </div>
 
-                <hr className='border-gray-600 mt-15 max-w-full mx-auto'/>
+                {/* <hr className='border-gray-600 mt-15 max-w-full mx-auto'/> */}
 
                  {/* --- New Statistics Section --- */}
-                <div className="py-10 grid grid-cols-3 gap-4 text-center text-white max-w-[80%] mx-auto">
+                <div className="py-10 grid grid-cols-3 gap-4 text-center text-white max-w-[80%] mx-auto bg-white/5 shadow-md shadow-blue-600 rounded-2xl mt-10 hover:shadow-2xl">
                     {HeroStats.map((stat) => (
                         <div key={stat.id}>
                             <p className="text-4xl font-bold">{stat.value}</p>

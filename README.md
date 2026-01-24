@@ -9,3 +9,5 @@ At PrimeEdge AI, we believe that every business—regardless of size or industry
 We don't just implement technology; we engineer solutions that solve real problems. From streamlining operations to enhancing customer experiences, our focus is always on delivering measurable ROI and sustainable growth.
 
 ---
+### Author
+Kevin Mongare CTO - PrimeEdgeAi.AI
